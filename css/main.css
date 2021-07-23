@@ -1,0 +1,419 @@
+@charset "utf-8";
+/* CSS Document */
+
+body
+{
+	width: 100%;
+	font-family: Baskerville, "Palatino Linotype", Palatino, "Century Schoolbook L", "Times New Roman", "serif";
+	position: absolute;
+}
+.container{
+	width: 100%;
+	height: 950px;
+	background-color: white;
+}
+.header{
+	width: 100%;
+	height: 7%;
+	background-color: white;
+	box-shadow: 0px 0px 3px  gray;
+}
+.socialicon{
+	width: 30%;
+	height: 7%;
+	float: left;
+	position: relative;
+	top: -20%;
+	left: 2%;
+	
+}
+.icon1{
+	width: 10%;
+	height: 70px;
+	float: left;
+	font-size: 10pt;
+}
+.icon2{
+	width: 10%;
+	height: 70px;
+	float: left;
+}
+.icon3{
+	width: 10%;
+	height: 70px;
+	float: left;
+}
+.logo{
+	width: 65%;
+	height: 7%;
+	float: left;
+	padding-top: 15px;
+	font-size: 18pt;
+	font-style: normal;
+	padding-right: 28%;
+}
+.menu{
+	width: 5%;
+	height: 7%;
+	padding-top: 15px;
+	float: left;
+}
+.slider{
+	width: 100%;
+	height: 70%;
+	overflow: hidden;
+}
+.slideshow{
+	width: 100%;
+	height: auto;
+}
+* {box-sizing: border-box;}
+  .mySlides {display: none;}
+  img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+.slidedotcenter{
+	width: 100%;
+	height: auto;
+	float: left;
+	position: relative;
+    top: -200px;
+	
+}
+/* dot text */
+.slidedot {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 2px;
+  width: 15px;
+  margin: 0 2px;
+  
+  background-color: ghostwhite;
+  border-radius: 0%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: white;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+.content{
+	width: 100%;
+	height: 700px;
+
+}
+.about{
+	width: auto;
+	height: 60px;
+	background-color: red;
+}
+.hovernow {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.hovernow:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.8);
+}
+.gril{
+	width: 80%;
+	height: 1200px;
+	margin: 0 auto;
+	padding: 10px;
+	padding-left: 150px;
+}
+a {
+  text-decoration: none;
+}
+
+.brand {
+  text-align: center;
+}
+
+.brand img {
+  width: 100px;
+}
+
+.p1:hover, .p2:hover {
+  opacity: .3;
+  cursor: pointer;
+}
+
+h1 h4 {
+	color: grey;
+	font-size: 24px;
+	font-weight: 400;
+}
+
+#portfolio p {
+	color: grey;
+	font-size: 12px;
+	font-weight: 200;
+}
+.single-content img {
+	width: 290px;
+	height: 100%;
+	margin: 10px;
+}
+
+.filters {
+	width: 100%;
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	padding: 20px 0;
+}
+
+li {
+	display: inline;
+	padding: 10px 25px;
+	font-size: 14px;
+	color: #636363;
+	font-weight: 400;
+	cursor: pointer;
+  	text-transform: uppercase;
+  	letter-spacing: .2em;
+}
+li:hover {
+	color: #a6a6a6;
+}
+
+li.active {
+	color: #ccc;
+	border: 1px solid #ccc;
+	border-radius: 15px;
+}.progress-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.skillbar{
+	width: 100%;
+	height: 350px;
+	margin: 0 auto;
+}
+.Skillbartitle{
+	width: 100%;
+	height: 80px;
+	padding-left: 20px;
+}
+.skillbarline{
+	width: 100%;
+	height: 320px;
+	padding-top: 50px;
+	display: flex;
+	justify-content: center;
+}
+.progress-bar {
+  position: relative;
+  width: 1150px;
+  box-sizing: border-box;
+}
+.progress-bar:not(:last-child) {
+  margin-bottom: 35px;
+}
+.progress-bar--lg-offset:not(:last-child) {
+  margin-bottom: 52.5px;
+}
+.progress-bar__bar,
+.progress-bar__bar-inner,
+.progress-bar__value,
+.progress-bar__skill {
+  box-sizing: border-box;
+}
+.progress-bar__bar {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.progress-bar__bar--no-overflow {
+  overflow: visible;
+}
+.progress-bar__bar-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  transform: scaleX(0);
+  transform-origin: left center;
+}
+.progress-bar__bar-inner.js-animated {
+  transition-property: all;
+  transition-duration: 0.5s;
+  transition-timing-function: cubic-bezier(0.1, 1.14, 0.31, 1.06);
+  transition-delay: 0s;
+  transform: scaleX(1);
+}
+.progress-bar__skill,
+.progress-bar__value {
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.progress-bar__value--aligned-value {
+  transform: translateX(-50%);
+}
+
+/* progress bar #1 styles */
+.progress-bar--1 {
+  height: 20px;
+  padding: 4px;
+  border: 1px solid #dddddd;
+  border-radius: 20px;
+}
+.progress-bar__bar-inner--1 {
+  background-image: linear-gradient(to right, white 0, #00BFB3 50%, #037971 100%);
+  background-size: 200%;
+  background-position: 0 0;
+  border-radius: 20px;
+}
+.progress-bar__skill--1 {
+  position: absolute;
+  top: -27px;
+  left: -20px;
+  opacity: 0;
+}
+.progress-bar__skill--1.js-animated {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  left: 0;
+  opacity: 1;
+}
+.progress-bar__value--1 {
+  position: absolute;
+  top: -27px;
+  right: -20px;
+  opacity: 0;
+}
+.progress-bar__value--1.js-animated {
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+  transition-delay: 0s;
+  right: 0;
+  opacity: 1;
+}
+.footer{
+	width: 100%;
+	height: 100px;
+	box-shadow: 0px 0px 2px  gray;
+}
+.socialicon2{
+	width: 40%;
+	height: 70px;
+	position: relative;
+	top: 30px;
+	padding-left: 300px;
+	margin: 0 auto;
+}
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: darkgrey;
+  color: black;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#myBtn:hover {
+  background-color: #555;
+}
